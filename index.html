@@ -1,7 +1,51 @@
-<html>
- <head>
- </head>
- <body>
-   <h1>Hello World<h1>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this jquery loads the header in every html file for static websites (github pages) -->
+<script src="common/jquery-3.6.0.min.js"></script>
+<script>
+  $(function(){
+    $("#header").load("common/header.html");
+  });
+</script>
+
+<div id="header">
+</div>
+
+<!-- Add your site or app content here -->
+<body style="padding: 0">
+<div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="hero-full-wrapper">
+          <div class="text-content">
+            <h1 id="animated-text">Aaron Newman<br>
+              <span id="typed-strings">
+                <span>Computer Engineer</span>
+                <span>Learner</span>
+                <span>Space Enthusiast</span>
+                <span>Roboticist</span>
+                <span>Musician</span>
+                <span>Hobbyist</span>
+              </span>
+              <span id="typed"></span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     type();
+  });
+</script>
+
+
+<script type="text/javascript" src="./resources/main.70a66962.js"></script></body>
+
 </html>
